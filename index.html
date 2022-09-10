@@ -55,7 +55,7 @@
       <section class="hero">
         <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="btn-hero">Замовити послугу</button>
+        <button type="button" class="btn-hero" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!--benefits-->
@@ -118,9 +118,12 @@
         <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="pictures">
-          <li class="pictures-item"><img src="./images/box1(1).jpg" alt="desktop" width="370" /></li>
-          <li class="pictures-item"><img src="./images/box2(1).jpg" alt="cell" width="370" /></li>
-          <li class="pictures-item"><img src="./images/box3(1).jpg" alt="tablet" width="370" /></li>
+          <li class="pictures-item"><img src="./images/box1(1).jpg" alt="desktop" width="370"/>
+          <p class="label">Десктопні додатки</p></li>
+          <li class="pictures-item"><img src="./images/box2(1).jpg" alt="cell" width="370"/>
+          <p class="label">Мобільні додатки</p></li>
+          <li class="pictures-item"><img src="./images/box3(1).jpg" alt="tablet" width="370"/>
+          <p class="label">Дизайнерські рішення</p></li>
         </ul>
         </div>
       </section>
@@ -379,5 +382,12 @@
       </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+      <button class="close-btn" data-modal-close>
+        <img src="./images/close-black-18dp(2)1.png" alt="close button">
+      </button></div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
